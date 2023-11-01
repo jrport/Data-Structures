@@ -54,12 +54,12 @@ def main():
     x = x + 1
     
 
-  rechi = [ListaEncadeada() for _ in range(tamanho)]
+  hash = [ListaEncadeada() for _ in range(tamanho)]
   for palavras in p:
     final = lista.ascii(palavras, tamanho)
-    rechi[final].inserir(palavras)
+    hash[final].inserir(palavras)
   
-  resultado = rechi[posicao]
+  resultado = hash[posicao]
   resultado.show()
 
 if __name__ == '__main__':
